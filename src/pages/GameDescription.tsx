@@ -65,13 +65,21 @@ const GameDescription = () => {
                         </div>
                         <div className="mt-8">
                             <h3 className="text-xl font-semibold mb-2">Minimum System Requirements:</h3>
-                            <ul className="text-sm text-gray-400">
+                          
+                            {game.minimum_system_requirements?(
+                                <ul className="text-sm text-gray-400">
                                 <li>OS: {game.minimum_system_requirements.os}</li>
                                 <li>Processor: {game.minimum_system_requirements.processor}</li>
                                 <li>Memory: {game.minimum_system_requirements.memory}</li>
                                 <li>Graphics: {game.minimum_system_requirements.graphics}</li>
                                 <li>Storage: {game.minimum_system_requirements.storage}</li>
-                            </ul>
+                                </ul>
+                            ):(
+                              <ul className="text-sm text-gray-400">
+                                <li>Not Available</li>
+                              </ul>
+                            )}
+                            
                         </div>
                     </div>
                 </div>
