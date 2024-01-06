@@ -1,12 +1,23 @@
+import Navbar from "./components/Navbar"
+import { BrowserRouter,Route,Routes } from "react-router-dom"
+import Home from "./pages/Home"
+import Footer from "./components/Footer"
+import GameDescription from "./pages/GameDescription"
+import { Flowbite } from "flowbite-react"
 
 function App() {
 
   return (
-    <div className="bg-black max-h-dvh">
-      <h1 className="text-3xl font-bold underline text-white">
-      Hello world!
-    </h1>
-    </div>
+    <Flowbite>
+      <Navbar />
+      <BrowserRouter>
+       <Routes>
+         <Route path="/"element={<Home />} />
+         <Route path="/game/:id"element={<GameDescription />} />
+       </Routes>
+      </BrowserRouter>
+      <Footer />
+    </Flowbite>
   )
 }
 
