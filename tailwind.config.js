@@ -16,6 +16,8 @@ export default {
       fontFamily: {
         rubik: ['Rubik Doodle Shadow'],
         sans: ["Roboto", "sans-serif"],
+        'ubuntu': ['Ubuntu', 'sans-serif'],
+        'shantell': ['Shantell Sans', 'serif'] 
       },
       animation: {
         glow: 'glow 2s ease-in-out infinite'

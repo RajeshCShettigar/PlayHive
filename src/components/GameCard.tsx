@@ -12,7 +12,7 @@ const GameCard = ({ content }: Props) => {
   const { id, title, thumbnail, short_description, genre, platform } = content;
 
   const link = `/game/${id}`;
-
+  
   const icons = platform.split(",").map((p) => {
     let icon = null;
     switch (p.trim()) {
@@ -50,7 +50,7 @@ const GameCard = ({ content }: Props) => {
             {title}
           </h5>
         <div className="flex flex-col px-3 py-2">
-          <p className="text-sm text-gray-700 dark:text-gray-400">
+          <p className="text-sm text-gray-700 dark:text-gray-400 font-shantell">
             {short_description}
           </p>
           <div className="flex flex-row items-center justify-between mt-auto py-2">

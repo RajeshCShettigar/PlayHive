@@ -1,6 +1,7 @@
 import { useState, useEffect,ChangeEvent } from "react";
 import { Game } from "../types/index";
 import GameCard from "../components/GameCard";
+import Header from "../components/Header";
 import axios from "axios";
 import {
   RAPID_API_HOST,
@@ -90,6 +91,7 @@ const Home = () => {
   
   return (
     <div className="flex flex-col items-center justify-center text-white dark:bg-gray-800">
+      <Header />
      <div className="flex flex-row flex-wrap justify-between border-1 shadow-md dark:bg-gray-800 border-gray-400 w-full">
       <form
         onChange={onChange}
@@ -169,14 +171,11 @@ const Home = () => {
         </label>
         <button
           onClick={resetFilters}
-          className="bg-pink-500 text-white px-4 rounded-md shadow-md hover:bg-gray-700 border-1 border-gray-400"
+          className="bg-pink-500 text-white px-4 rounded-md shadow-md hover:bg-gray-700 border-1 border-gray-400 my-3 mx-3"
         >
           Reset Filters
         </button>
       </form>
-      <div className="flex justify-center my-4">
-        
-      </div>
       </div>
       <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full px-4 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
         {currentGames.length > 0 ? (
