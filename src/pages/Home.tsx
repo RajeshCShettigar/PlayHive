@@ -197,6 +197,7 @@ const Home = () => {
           previousLabel="Go back"
           nextLabel="Go forward"
           showIcons
+          className="bg-gray-800"
         />
       </div>
     </div>
