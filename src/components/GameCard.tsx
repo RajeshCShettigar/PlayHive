@@ -46,15 +46,15 @@ const GameCard = ({ content }: Props) => {
     <Link to={link}>
       <div className="max-w-sm overflow-hidden h-full hover:shadow-2xl transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 rounded drop-shadow-lg flex flex-col justify-between bg-gray-800 ">
         <img src={thumbnail} alt={title} className="w-full h-48 object-cover" />
-        <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white px-3 py-2">
+        <h5 className="text-2xl font-bold tracking-tight text-gray-400 px-3 py-2">
             {title}
           </h5>
         <div className="flex flex-col px-3 py-2">
-          <p className="text-sm text-gray-700 dark:text-gray-400 font-shantell">
+          <p className="text-sm text-gray-400 font-shantell">
             {short_description}
           </p>
           <div className="flex flex-row items-center justify-between mt-auto py-2">
-            <p className="font-normal text-gray-700 dark:text-gray-400">
+            <p className="font-normal text-gray-400">
               {genre}
             </p>
             <p>{icons}</p>
