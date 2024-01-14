@@ -31,10 +31,11 @@ const Home = () => {
       })
       setGames(response.data);
       setFilteredGames(response.data);
+      console.log(games);
     }
     catch(err:any){
-      console.log(err);
       setError(err.message);
+      console.log(error);
     }
   }
   useEffect(() => {
@@ -94,9 +95,9 @@ const Home = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center text-white dark:bg-gray-800">
+    <div className="flex flex-col items-center justify-center text-white bg-gray-800">
       <Header />
-      <div className="flex flex-row flex-wrap justify-between border-1 shadow-md dark:bg-gray-800 border-gray-400 w-full">
+      <div className="flex flex-row flex-wrap justify-between border-1 shadow-md bg-gray-800 border-gray-400 w-full">
         <form
           onChange={onChange}
           className="flex flex-col sm:flex-row justify-between max-w-542px px-4 mx-auto text-secondaryTextColor box-border my-2 text-gray-300"
@@ -179,9 +180,9 @@ const Home = () => {
       </ul>
 
       {currentGames.length === 0 && (
-        <div className="w-full h-full flex items-center justify-center dark:bg-dark-gradient p-4 text-white">
+        <div className="w-full h-full flex items-center justify-center bg-dark-gradient p-4 text-white">
           <div className="mx-auto justify-center">
-            <h1 className="text-4xl dark:text-gray-400 text-center py-56">
+            <h1 className="text-4xl text-gray-400 text-center py-56">
               No games to display
             </h1>
           </div>
