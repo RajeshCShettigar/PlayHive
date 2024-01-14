@@ -4,7 +4,6 @@ import { useParams } from "react-router-dom";
 import { Game } from "../types";
 import { RAPID_API_HOST, RAPID_API_KEY, BASE_URL } from "../utils/constants";
 
-
 const GameDescription = () => {
     const [game, setGame] = useState<Game>();
     const { id } = useParams<{ id: string }>();

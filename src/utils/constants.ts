@@ -10,6 +10,10 @@ export const WINDOWS = 'PC (Windows)'
 
 export const PLATFORMS = [
 	{
+		value: 'all',
+		display: 'All Platforms',
+	},
+	{
 		value: 'browser',
 		display: 'Browser (Web)',
 	},
@@ -62,69 +66,14 @@ export const GENRES = [
 	},
 ]
 
-export const TAGS = [
-	{
-		value: 'mmofps',
-		display: 'MMOFPS',
-	},
-	{
-		value: 'action-rpg',
-		display: 'Action RPG',
-	},
-	{
-		value: 'sandbox',
-		display: 'Sandbox',
-	},
-	{
-		value: 'open-world',
-		display: 'Open World',
-	},
-	{
-		value: 'survival',
-		display: 'Survival',
-	},
-	{
-		value: 'battle-royale',
-		display: 'Battle Royale',
-	},
-	{
-		value: 'mmotps',
-		display: 'MMOTPS',
-	},
-	{
-		value: 'anime',
-		display: 'Anime',
-	},
-	{
-		value: 'pvp',
-		display: 'PvP',
-	},
-	{
-		value: 'pve',
-		display: 'PvE',
-	},
-	{
-		value: 'fantasy',
-		display: 'Fantasy',
-	},
-	{
-		value: 'sci-fi',
-		display: 'Sci-Fi',
-	},
-]
-
 export const SORT_BY = [
 	{
-		value: 'relevance',
-		display: 'Relevance',
+		value:'default',
+		display:'Default',
 	},
 	{
 		value: 'popularity',
 		display: 'Popularity',
-	},
-	{
-		value: 'release-date',
-		display: 'Release Date',
 	},
 	{
 		value: 'alphabetical',
