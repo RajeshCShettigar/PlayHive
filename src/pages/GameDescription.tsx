@@ -28,12 +28,12 @@ const GameDescription = () => {
    
 
     return (
-        <div className="flex flex-col items-center justify-center text-white dark:bg-slate-800 bg-gray-100">
+        <div className="flex flex-col items-center justify-center text-white bg-slate-900">
             {game && (
-                <div className="max-w-7xl overflow-hidden bg-white dark:bg-slate-800">
+                <div className="max-w-7xl overflow-hidden bg-slate-800 border-x-2 border-gray-400">
                     <img src={game.thumbnail} alt={game.title} className="w-full h-96 object-cover" />
                     <div className="p-6">
-                        <h2 className="text-3xl font-bold mb-4 text-black">{game.title}</h2>
+                        <h2 className="text-3xl font-bold mb-4 text-gray-300">{game.title}</h2>
                         <p className="text-sm text-gray-400 mb-4">{game.short_description}</p>
                         <div className="flex justify-between mb-4">
                             <p className="text-sm text-gray-400">Genre : {game.genre}</p>

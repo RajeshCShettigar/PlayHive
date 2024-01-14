@@ -95,12 +95,12 @@ const Home = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center text-white bg-gray-800">
+    <div className="flex flex-col items-center justify-center text-white bg-gray-900">
       <Header />
-      <div className="flex flex-row flex-wrap justify-between border-1 shadow-md bg-gray-800 border-gray-400 w-full">
+      <div className="flex flex-row flex-wrap justify-between border-y-2 shadow-md border-gray-400 w-full">
         <form
           onChange={onChange}
-          className="flex flex-col sm:flex-row justify-between max-w-542px px-4 mx-auto text-secondaryTextColor box-border my-2 text-gray-300"
+          className="flex flex-col sm:flex-row justify-between max-w-542px px-4 mx-auto box-border my-2 text-gray-300"
         >
           <h1 className="text-2xl mr-8 my-auto w-full sm:w-auto">
             Filter games
@@ -172,7 +172,7 @@ const Home = () => {
       <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full px-4 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
         {currentGames.length > 0
           ? currentGames.map((game: Game) => (
-              <li key={game.id} className="border-4 border-transparent">
+              <li key={game.id} className="border-2 border-gray-400">
                 <GameCard content={game} />
               </li>
             ))
@@ -180,7 +180,7 @@ const Home = () => {
       </ul>
 
       {currentGames.length === 0 && (
-        <div className="w-full h-full flex items-center justify-center bg-dark-gradient p-4 text-white">
+        <div className="w-full h-full flex items-center justify-center bg-gray-900 p-4 text-white">
           <div className="mx-auto justify-center">
             <h1 className="text-4xl text-gray-400 text-center py-56">
               No games to display
