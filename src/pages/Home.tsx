@@ -5,7 +5,7 @@ import Header from "../components/Header";
 import axios from "axios";
 import { RAPID_API_HOST,RAPID_API_KEY,BASE_URL,SORT_BY,GENRES,PLATFORMS} from "../utils/constants";
 import { Pagination } from "flowbite-react";
-
+import { theme } from "flowbite-react";
 
 const Home = () => {
   const [games, setGames] = useState<Game[]>([]);
@@ -93,7 +93,7 @@ const Home = () => {
   const paginate = (pageNumber: number) => {
     setCurrentPage(pageNumber);
   };
-
+ 
   return (
     <div className="flex flex-col items-center justify-center text-white bg-gray-900">
       <Header />
@@ -196,8 +196,8 @@ const Home = () => {
           onPageChange={paginate}
           previousLabel="Go back"
           nextLabel="Go forward"
-          showIcons
-          className="bg-gray-800"
+          showIcons={true}
+          className="bg-gray-900"
         />
       </div>
     </div>
