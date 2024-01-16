@@ -22,7 +22,7 @@ npm run dev
 4. Open http://localhost:5173 to view it in the browser.
 
 ## Screenshots :
-![image]('./public/playhive_sc1.jpeg')
+![image]('/public/playhive_sc1.jpeg')
 
-![image]('./public/playhive_sc2.jpeg')
+![image]('/public/playhive_sc2.jpeg')
 
