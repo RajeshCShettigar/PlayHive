@@ -5,7 +5,6 @@ import Header from "../components/Header";
 import axios from "axios";
 import { RAPID_API_HOST,RAPID_API_KEY,BASE_URL,SORT_BY,GENRES,PLATFORMS} from "../utils/constants";
 import { Pagination } from "flowbite-react";
-import { theme } from "flowbite-react";
 
 const Home = () => {
   const [games, setGames] = useState<Game[]>([]);
